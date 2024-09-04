@@ -1,4 +1,7 @@
-https://github.com/KentaWood/Summarizer/actions/runs/10706176792/job/29683283182/badge.svg 
+![example workflow]
+
+(https://github.com/KentaWood/Summarizer/actions/runs/10706176792/job/29683283182/badge.svg )
+
 # Document Summarizer using Groq AI
 
 This project uses the Groq AI API to summarize text documents. You can easily run the script from the terminal to get a summary of a specified document.
