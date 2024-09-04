@@ -1,6 +1,4 @@
-![example workflow]
-
-(https://github.com/KentaWood/Summarizer/actions/runs/10706176792/job/29683283182/badge.svg )
+[![tests](https://github.com/KentaWood/Summarizer/actions/workflows/tests.yml/badge.svg)](https://github.com/KentaWood/Summarizer/actions/workflows/tests.yml)
 
 # Document Summarizer using Groq AI
 
