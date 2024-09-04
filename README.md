@@ -29,7 +29,3 @@ Replace `declaration` with the name of your text file.
 ## Brief Overview
 
 The script reads the content of the specified file, sends it to the Groq model for summarization, and prints the summary in the terminal.
-
-```
-
-This version gives a quick overview of the project and instructions on how to set it up and use it.
