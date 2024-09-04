@@ -1,3 +1,4 @@
+[![tests](https://github.com/KentaWood/Summarizer/actions/workflows/tests.yml/badge.svg)](https://github.com/KentaWood/Summarizer/actions/workflows/tests.yml)
 
 # Document Summarizer using Groq AI
 
