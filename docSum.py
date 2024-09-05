@@ -40,12 +40,7 @@ client = Groq(
 # Open the file in read mode and store its content in the variable 'text'
 with open(args.filename) as f:
     text = f.read()
-
-'''
-We need to call the split func onto the text
-Then fpr each paragrapgh in the outpult list,call the LLM code belwowe to sumarzie it Put the sumary int o a new list
-Recall the LLM code Below on the new smaller
-'''
+    
 # Function to split the document into paragraphs
 paragraphs = split_document_into_chunks(text)[:25]
 
