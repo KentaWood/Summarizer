@@ -1,5 +1,7 @@
-import os  # Importing the os module to interact with environment variables
+import os
+from posixpath import split  # Importing the os module to interact with environment variables
 from groq import Groq  # Importing the Groq class from the groq package
+
 
 # parse command line args
 import argparse
@@ -16,6 +18,13 @@ client = Groq(
 # Open the file in read mode and store its content in the variable 'text'
 with open(args.filename) as f:
     text = f.read()
+
+'''
+We need to call the split func onto the text
+Then fpr each paragrapgh in the outpult list,call the LLM code belwowe to sumarzie it Put the sumary int o a new list
+Recall the LLM code Below on the new smaller
+'''
+
 
 # Create a chat completion using the Groq API, sending a system instruction and the user input
 chat_completion = client.chat.completions.create(

@@ -27,3 +27,5 @@ jobs:
       - name: test declaration
         run: |
           python3 docSummary.py docs/declaration
+          python3 -m doctest docSummary.py
+          
