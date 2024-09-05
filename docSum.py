@@ -38,7 +38,7 @@ client = Groq(
 )
 
 # Open the file in read mode and store its content in the variable 'text'
-with open(args.filename) as f:
+with open(args.filename, 'r', encoding='utf-8', errors='ignore') as f:
     text = f.read()
     
 # Function to split the document into paragraphs
