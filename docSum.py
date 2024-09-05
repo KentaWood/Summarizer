@@ -42,16 +42,16 @@ with open(args.filename) as f:
     text = f.read()
     
 # Function to split the document into paragraphs
-paragraphs = split_document_into_chunks(text)[:25]
+paragraphs = split_document_into_chunks(text)
 
-print(len(paragraphs)) 
+# print(len(paragraphs)) 
 
 while(len(paragraphs) > 1):
     tmp_text = []  # List to store the summarized paragraphs
     for paragraph in paragraphs:
         
         # Create a chat completion using the Groq API, sending a system instruction and the user input
-        print('hi')
+        # print('hi')
         chat_completion = client.chat.completions.create(
             messages=[
                 {
@@ -74,7 +74,7 @@ while(len(paragraphs) > 1):
 
     # Re-split the summarized text into paragraphs
     paragraphs = split_document_into_chunks(summarized_text)
-    print(len(paragraphs))  
+    # print(len(paragraphs))  
 
 
 print(paragraph)
