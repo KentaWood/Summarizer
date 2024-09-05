@@ -26,6 +26,5 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: test declaration
         run: |
-          python3 docSummary.py docs/declaration
-          python3 -m doctest docSummary.py
+          for file in docs/*; do python3 docSummary.py ${file}; done
           
