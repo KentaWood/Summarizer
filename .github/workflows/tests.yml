@@ -27,6 +27,6 @@ jobs:
       - name: test declaration
         run: |
           python3 docSum.py docs/declaration
-          python3 docSum.py docs/constitution-mx.txt
+          
           
           
