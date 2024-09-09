@@ -15,7 +15,7 @@ This project utilizes the Groq AI API to summarize text documents. You can easil
    To set up the environment variable, activate the virtual environment and export the `.env` file:
 
    ```bash
-   source venv/bin/activate
+   . venv/bin/activate
    export $(cat .env)
    ```
 
