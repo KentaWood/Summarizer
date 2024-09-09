@@ -16,7 +16,7 @@ This project uses the Groq AI API to summarize text documents. You can easily ru
    export GROQ_API_KEY="your-groq-api-key"
    ```
 
-## Usage (Can only process upto 30000 Tokens ~ 20000-25000 Words)
+## Usage 
 
 To summarize a document, run:
 
