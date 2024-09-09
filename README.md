@@ -1,7 +1,8 @@
 [![tests](https://github.com/KentaWood/Summarizer/actions/workflows/tests.yml/badge.svg)](https://github.com/KentaWood/Summarizer/actions/workflows/tests.yml)
+
 # Document Summarizer using Groq AI
 
-This project uses the Groq AI API to summarize text documents. You can easily run the script from the terminal to get a summary of a specified document.
+This project utilizes the Groq AI API to summarize text documents. You can easily run the script from the terminal to generate a summary of a specified document.
 
 ## Setup
 
@@ -10,21 +11,23 @@ This project uses the Groq AI API to summarize text documents. You can easily ru
    pip install groq
    ```
 
-2. **Set Groq API Key**:
-   Store your Groq API key in an environment variable:
+2. **Set Groq API Key as an Environment Variable**:
+   To set up the environment variable, activate the virtual environment and export the `.env` file:
+
    ```bash
-   export GROQ_API_KEY="your-groq-api-key"
+   source venv/bin/activate
+   export $(cat .env)
    ```
 
-## Usage 
+## Usage
 
-To summarize a document, run:
+To summarize a document, run the following command:
 
 ```bash
-python3 docSummary.py declaration
+python3 docSummary.py <filename>
 ```
 
-Replace `declaration` with the name of your text file. 
+Replace `<filename>` with the name of the text file you want to summarize.
 
 ## Brief Overview
 
