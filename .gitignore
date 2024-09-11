@@ -1,3 +1,6 @@
-venv
+*.swo
 *.swp
 .env
+*.db
+__pycache__
+venv
